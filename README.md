@@ -34,7 +34,6 @@ myPromise.then(
 ```
 (borrowed from [w3schools](https://www.w3schools.com/js/js_promise.asp))
 
-
 **Benefits**
 - Improved errorhandling
 - Way easier to read/write
