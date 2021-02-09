@@ -13,8 +13,11 @@
 Definition: *A promise is an object that may produce a single value some time in the future*. A promise follows a well defined spec. For example it needs to implement a `then` method which returns a `resolved` and a `rejected` funciton. A promise can either be in the state *resolved*, *rejected* or *pending*. It is setteled once it is not pending. Once settled, a promise can not be resettled. Calling resolve() or reject() again will have no effect. The immutability of a settled promise is an important feature.
 
 > **"I Promise a Result!"**
+>
 > "Producing code" is code that can take some time
+>
 > "Consuming code" is code that must wait for the result
+>
 > A Promise is a JavaScript object that links producing code and consuming code
 
 ```JavaScript
