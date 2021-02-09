@@ -71,6 +71,29 @@ const init = () => {
    * PROMISES
    * ========
    */
+  // let myPromise = new Promise((resolve, reject) => {
+  //   try {
+  //     // throw new Error("🔥️🔥️🔥️")
+  //     sleep(2000).then(() => {
+  //       appendItem("As promised");
+  //       resolve();
+  //     });
+  //   } catch (err) {
+  //     reject(err);
+  //   }
+  // });
+
+  // myPromise.then(
+  //   () => appendItem("After Promise"),
+  //   (error) => appendItem(error)
+  // );
+
+  // OR catch at the end
+
+  // myPromise
+  // .then(() => appendItem("After Promise"))
+  // .catch((error) => appendItem(error));
+
 
   /**
    * =============
@@ -83,12 +106,21 @@ const init = () => {
   //   appendItem("Three");
   // };
   // waitForEach();
+  
+  // myPromise
+  //   .then(async () => {
+  //     appendItem("After Promise");
+  //     await sleep(3000);
+  //   })
+  //   .then(() => appendItem("After Promise of Promise"))
+  //   .catch(error => appendItem(error));
 
   /**
    * =====================
    * SIDENOTE: ASYNC LOOPS
    * =====================
    */
+  
 };
 
 // Run app
