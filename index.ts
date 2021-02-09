@@ -7,19 +7,28 @@ const baseApp = `
 `;
 
 /**
- * Simulate an async function call
+ * Sleep for x milliseconds
  */
-const asyncOperation = (ms = 1000) =>
-  new Promise(resolve => setTimeout(resolve, ms));
+const sleep = (ms = 1000) => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
 
 /**
  * Add list item to the DOM
  */
-const appendItem = (text: string) => {
+const appendItem = (text = "☎️  🔙️") => {
   const node = document.createElement("LI");
   const textNode = document.createTextNode(text);
   node.appendChild(textNode);
   document.getElementById("list").appendChild(node);
+};
+
+/**
+ * Simulate an async function call
+ */
+const asyncOperation = async (text?: string, ms?: number) => {
+  await sleep(ms);
+  appendItem(text);
 };
 
 const init = () => {
@@ -70,9 +79,7 @@ const init = () => {
    */
   // const waitForEach = async () => {
   //   appendItem("One");
-  //   await asyncOperation(2000);
-  //   appendItem("Two");
-  //   await asyncOperation(2000);
+  //   asyncOperation("Two"); // vs await asyncOperation("Two");
   //   appendItem("Three");
   // };
   // waitForEach();
