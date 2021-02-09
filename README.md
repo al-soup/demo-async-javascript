@@ -38,7 +38,7 @@ myPromise.then(
 
 **Benefits**
 - Improved errorhandling
-- Way easier to read/write
+- Way easier than to deal with callbacks
 
 **Drawbacks**
 
