@@ -7,20 +7,13 @@ const baseApp = `
 `;
 
 /**
- * Helper: Simulate an async function call
+ * Simulate an async function call
  */
-const asyncOperation = (ms = 2000, msg = "☎️  🔙️") => {
-  return new Promise(resolve =>
-    setTimeout(() => {
-      console.log(msg);
-      appendItem(msg);
-      resolve;
-    }, ms)
-  );
-};
+const asyncOperation = (ms = 1000) =>
+  new Promise(resolve => setTimeout(resolve, ms));
 
 /**
- * Helper: Add list item to the DOM
+ * Add list item to the DOM
  */
 const appendItem = (text: string) => {
   const node = document.createElement("LI");
@@ -75,6 +68,14 @@ const init = () => {
    * ASYNC / AWAIT
    * =============
    */
+  const waitForEach = async () => {
+    appendItem("One");
+    await asyncOperation(2000);
+    appendItem("Two");
+    await asyncOperation(2000);
+    appendItem("Three");
+  };
+  waitForEach();
 
   /**
    * =====================
@@ -83,5 +84,5 @@ const init = () => {
    */
 };
 
-// Run first to setup app
+// Run app
 init();
