@@ -68,14 +68,14 @@ const init = () => {
    * ASYNC / AWAIT
    * =============
    */
-  const waitForEach = async () => {
-    appendItem("One");
-    await asyncOperation(2000);
-    appendItem("Two");
-    await asyncOperation(2000);
-    appendItem("Three");
-  };
-  waitForEach();
+  // const waitForEach = async () => {
+  //   appendItem("One");
+  //   await asyncOperation(2000);
+  //   appendItem("Two");
+  //   await asyncOperation(2000);
+  //   appendItem("Three");
+  // };
+  // waitForEach();
 
   /**
    * =====================
