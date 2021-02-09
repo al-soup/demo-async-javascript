@@ -114,12 +114,6 @@ const init = () => {
   //   })
   //   .then(() => appendItem("After Promise of Promise"))
   //   .catch(error => appendItem(error));
-
-  /**
-   * =====================
-   * SIDENOTE: ASYNC LOOPS
-   * =====================
-   */
   
 };
 
