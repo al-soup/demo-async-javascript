@@ -1,6 +1,6 @@
 # Demo Async JavaScript
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/typescript-gtbjn6)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/demo-async-javascript)
 
 ## Event Loop Primer
 
