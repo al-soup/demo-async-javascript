@@ -4,7 +4,10 @@
 
 ## Event Loop Primer
 
-tbd
+## Callback (Hell)
+Definition: *A function that is passed into another function to be executed later*.
+
+[Read](https://zellwk.com/blog/callbacks/)
 
 ## What is a Promise?
 
