@@ -46,44 +46,26 @@ const init = () => {
   appendItem("World");
 
   /**
-   * ===============
-   * CALLBACK (HELL)
-   * ===============
-   */
-  // setTimeout(() => {
-  //   appendItem("Eins");
-  //   setTimeout(() => {
-  //     appendItem("Zwei");
-  //     setTimeout(() => {
-  //       appendItem("oder");
-  //       setTimeout(() => {
-  //         appendItem("Drei");
-  //       }, 800);
-  //     }, 800);
-  //   }, 800);
-  // }, 800);
-
-  /**
    * ========
    * PROMISES
    * ========
    */
-  // let myPromise = new Promise((resolve, reject) => {
-  //   try {
-  //     // throw new Error("🔥️🔥️🔥️")
-  //     sleep(2000).then(() => {
-  //       appendItem("As promised");
-  //       resolve();
-  //     });
-  //   } catch (err) {
-  //     reject(err);
-  //   }
-  // });
+  let myPromise = new Promise<void>((resolve, reject) => {
+    try {
+      // throw new Error("🔥️🔥️🔥️")
+      sleep(2000).then(() => {
+        appendItem("As promised");
+        resolve();
+      });
+    } catch (err) {
+      reject(err);
+    }
+  });
 
-  // myPromise.then(
-  //   () => appendItem("After Promise"),
-  //   (error) => appendItem(error)
-  // );
+  myPromise.then(
+    () => appendItem("After Promise"),
+    (error) => appendItem(error)
+  );
 
   // OR catch at the end
 
