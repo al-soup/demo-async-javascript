@@ -42,11 +42,8 @@ const init = () => {
    * EVENT LOOP PRIMER
    * =================
    */
-  // appendItem("Hello");
-  // function world() {
-  //   appendItem("World");
-  // }
-  // setTimeout(world, 1000);
+  asyncOperation("Hello");
+  appendItem("World");
 
   /**
    * ===============
